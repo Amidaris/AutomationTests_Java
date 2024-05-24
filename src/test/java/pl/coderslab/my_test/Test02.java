@@ -1,6 +1,6 @@
 package pl.coderslab.my_test;
 
-public class Test01 {
+public class Test02 {
 
     public static void main(String[] args) {
 
