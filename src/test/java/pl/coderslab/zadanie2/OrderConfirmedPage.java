@@ -23,7 +23,8 @@ public class OrderConfirmedPage {
         try {
             File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
-            File dest = new File("C:\\Users\\adamg\\Documents\\CL Automation Tester\\ZadanieZaliczenioweNr2\\untitled\\src\\Screenshot\\Screenshot_" + timestamp + ".png");
+            File dest = new File("C:\\Users\\adamg\\Documents\\My_GIT_Project\\AutomationTests_Java\\src" +
+                    "\\Screenshot\\Screenshot_" + timestamp + ".png");
             FileUtils.copyFile(screenshotFile, dest);
             System.out.println("Zrzut ekranu został zapisany jako Screenshot_" + timestamp + ".png");
         } catch (Exception e) {
