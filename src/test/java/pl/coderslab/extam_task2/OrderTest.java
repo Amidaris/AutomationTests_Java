@@ -1,4 +1,4 @@
-package pl.coderslab.zadanie2;
+package pl.coderslab.extam_task2;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

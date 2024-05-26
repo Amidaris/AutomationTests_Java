@@ -1,4 +1,4 @@
-package pl.coderslab.zadanie2;
+package pl.coderslab.extam_task2;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

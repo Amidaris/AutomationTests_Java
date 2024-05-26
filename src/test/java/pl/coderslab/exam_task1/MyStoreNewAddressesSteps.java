@@ -1,4 +1,4 @@
-package pl.coderslab.zadanie1;
+package pl.coderslab.exam_task1;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;

@@ -1,4 +1,4 @@
-package pl.coderslab.zadanie2;
+package pl.coderslab.extam_task2;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
