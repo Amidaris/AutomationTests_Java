@@ -33,6 +33,16 @@ public class RegisterTest {
         String generatedEmail = generateUniqueEmail();
         System.out.println("Generated email: " + generatedEmail);
         authPage.enterNewUserEmailAndSubmit(generatedEmail);
+        RegisterPage registerPage = new RegisterPage(driver);
+        String enteredUserName = faker.name().firstName();
+        String enteredLastName = faker.name().lastName();
+        registerPage.enterRequiredUserData(enteredUserName, enteredLastName, "secretPass");
+        Assertions.assertEquals(generatedEmail, registerPage.getEmail());
+        registerPage.register();
+        MyAccountPage myAccountPage = new MyAccountPage(driver);
+        Assertions.assertTrue(myAccountPage.isSuccessAlertDisplayed(), "Success alert should be displayed");
+        Assertions.assertEquals("Your account has been created.", myAccountPage.getSuccessAlert());
+        Assertions.assertEquals(enteredUserName, myAccountPage.getUserName());
     }
 
     @AfterEach

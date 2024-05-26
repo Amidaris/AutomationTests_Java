@@ -1,4 +1,4 @@
-package pl.coderslab.my_test.shopLogin;
+package pl.coderslab.my_test.myStoreShopTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
